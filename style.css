@@ -16,20 +16,17 @@ body {
 
 .cronometer {
   width: 400px;
-  height: 200px;
-  padding: 20px;
+  height: 130px;
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   flex-direction: column;
   gap: 20px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.322);
-  backdrop-filter: blur(7.1px);
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.349);
+  backdrop-filter: blur(17px);
   -webkit-backdrop-filter: blur(3.1px);
-  border: 1px solid rgba(255, 255, 255, 0.74);
   /* background-color: white; */
 }
 
@@ -62,8 +59,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  width: 100px;
+  border-radius: 3px;
+  width: 110px;
   height: 120px;
   box-shadow: 0 4px 10px rgba(49, 34, 34, 0.322);
 }
