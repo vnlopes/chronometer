@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgba(15,177,255,1) 0%, rgba(175,0,255,1) 100%);
+}
+
+.cronometer {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.322);
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  /* background-color: white; */
+}
+
+.btts {
+  display: flex;
+  gap: 30px;
+}
+
+.btts button {
+  width: 100px;
+  height: 40px;
+}
+
+.minute span,
+.second span,
+.millesimus span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-left: 2px;
+}
+
+.minute,
+.second,
+.millesimus {
+  background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgb(0, 0, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 120px;
+  box-shadow: 0 4px 10px rgba(49, 34, 34, 0.322);
+}
+
+.main-cronometer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* #check {
+  width: 110px;
+  height: 50px;
+  visibility: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.slider {
+  position: relative;
+  border-radius: 30px;
+  width: 110px;
+  height: 50px;
+  border: 4px solid rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+#slider-button {
+  margin: 3px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(56, 56, 56, 1) 100%
+  );
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes slider-come-back {
+  0% {
+    left: 54%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.right {
+  background: linear-gradient(
+    45deg,
+    rgba(9, 255, 0, 1) 0%,
+    rgba(0, 161, 10, 1) 100%
+  );
+  animation: slider 0.7s forwards;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 54%;
+  }
+}
+
+.left {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(156, 0, 0, 1) 100%
+  );
+  animation: slider-come-back 0.7s forwards;
+} */
