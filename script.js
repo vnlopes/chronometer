@@ -8,9 +8,6 @@ let id, id1, id2;
 
 const start = () => {
     document.querySelector('.start').disabled = true;
-
-    let seconds = 0;
-
     id = setInterval(() => {
         if(seconds < 60){
             seconds++;
@@ -68,7 +65,7 @@ const start = () => {
 
 const stop = () => {
     document.querySelector('.start').disabled = false;
-    clearInterval(id, id1, id2)
+    clearInterval(id)
 }
 
 
