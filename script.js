@@ -8,6 +8,9 @@ let id, id1, id2;
 
 const start = () => {
     document.querySelector('.start').disabled = true;
+
+    let seconds = 0;
+
     id = setInterval(() => {
         if(seconds < 60){
             seconds++;
@@ -15,40 +18,49 @@ const start = () => {
         
         if(seconds == 60){
             seconds = 0
+            minutes++;
+            minute.innerHTML = minutes;
         }
 
-
         second.innerHTML = seconds;
-
-
-    }, 1000);
-
-  
-
-    id1 = setInterval(() => {
-        if(minutes < 60){
-            minutes++;
-        } 
         
         if(minutes == 60){
             minutes = 0
+            hour ++
+            hours.innerHTML = hour;
         }
-        minute.innerHTML = minutes;
-    }, 60000);
-    
-    
-
-
-    id2 = setInterval(() => {
-        if(hour < 13){
-            hour++;
-        } 
         
-        if(hour == 13){
+        if(hour >= 12){
             hour = 0
         }
-        hours.innerHTML = hour;
-    }, 3600000);
+
+    }, 1000);
+    
+
+  
+
+    // id1 = setInterval(() => {
+    //     if(minutes < 60){
+    //         minutes++;
+    //     } 
+        
+    //     if(minutes == 60){
+    //         minutes = 0
+    //     }
+    //     minute.innerHTML = minutes;
+    // }, 60000);
+
+
+    // id2 = setInterval(() => {
+    //     if(hour < 13){
+    //         hour++;
+    //     } 
+        
+    //     if(hour >= 13){
+    //         hour = 0
+    //     }
+    //     hours.innerHTML = hour;
+    // }, 100);
 
 }
 
