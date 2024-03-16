@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(45deg, rgba(15,177,255,1) 0%, rgba(175,0,255,1) 100%);
+  background: linear-gradient(45deg, rgb(26, 26, 26) 0%, rgb(21, 151, 255) 100%);
   user-select: none;
 }
 
@@ -118,6 +118,47 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+@media(max-width: 600px){
+  .cronometer{
+    width: 270px;
+    height: 90px;
+  }
+
+.hours,
+.minute,
+.second {
+  background: linear-gradient(0deg, rgb(19, 19, 19) 0%, rgb(0, 0, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  width: 80px;
+  height: 90px;
+  box-shadow: 0 4px 10px rgba(49, 34, 34, 0.322);
+  flex-direction: column;
+  gap: 7px;
+}
+
+.hours span,
+.minute span,
+.second span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-left: 2px;
+}
+
+.main-cronometer{
+  gap: 17px;
+}
+
+
 }
 
 

@@ -1,12 +1,12 @@
 const hours = document.querySelector('#hours');
 const minute = document.querySelector('#minute');
 const second = document.querySelector('#second');
-var minutes = 0;
-var hour = 0;
+let seconds = 0;
+let minutes = 0;
+let hour = 0;
 let id, id1, id2;
 
 const start = () => {
-    let seconds = 0;
     document.querySelector('.start').disabled = true;
     id = setInterval(() => {
         if(seconds < 60){
