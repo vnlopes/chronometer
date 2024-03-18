@@ -8,30 +8,47 @@ let id, id1, id2;
 
 const start = () => {
     document.querySelector('.start').disabled = true;
+
     id = setInterval(() => {
-        if(seconds < 60){
+        if(seconds <= 60){
             seconds++;
         } 
+
+        if(seconds > 9){
+            second.innerHTML = seconds;
+        } else{
+            second.innerHTML = '0' + seconds;
+        }
         
-        if(seconds == 60){
-            seconds = 0
+        if(seconds == 59){
+            seconds = 0;
             minutes++;
             minute.innerHTML = minutes;
+            if(minutes > 9){
+                minute.innerHTML = minutes;
+            } else{
+                minute.innerHTML = '0' + minutes;
+            }
         }
 
-        second.innerHTML = seconds;
         
-        if(minutes == 60){
+        if(minutes > 59){
             minutes = 0
             hour ++
             hours.innerHTML = hour;
-        }
-        
-        if(hour >= 12){
-            hour = 0
+            if(hour > 9){
+                hours.innerHTML = hour;
+            } else{
+                hours.innerHTML = '0' + hour;
+            }
         }
 
-    }, 1000);
+
+        if(hour >= 12){
+            hour = 1;
+        }
+
+    }, 0.0000000001);
     
 
   
